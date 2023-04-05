@@ -19,6 +19,15 @@ public class User {
 	public String getName() { return this.name; }
 	public void setName(String name) { this.name = name; }
 
+	public User(String username) {
+		this.username = username;
+	}
+
+	public User(String username, String name) {
+		this.username = username;
+		this.name = name;
+	}
+
 	@Override
 	public String toString() {
 		return "user_id: %s, username: %s, name: %s"
